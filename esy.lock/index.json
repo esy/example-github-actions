@@ -1,0 +1,33 @@
+{
+  "checksum": "32bd2c5ae7fad99b1876c18cadecd371",
+  "root": "test-github-action@link-dev:./package.json",
+  "node": {
+    "test-github-action@link-dev:./package.json": {
+      "id": "test-github-action@link-dev:./package.json",
+      "name": "test-github-action",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [ "ocaml@5.1.1000@d41d8cd9" ],
+      "devDependencies": []
+    },
+    "ocaml@5.1.1000@d41d8cd9": {
+      "id": "ocaml@5.1.1000@d41d8cd9",
+      "name": "ocaml",
+      "version": "5.1.1000",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/ocaml/-/ocaml-5.1.1000.tgz#sha1:9b6a5209b47f1eb23e828c325b115940240ee3df"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "description": ".",
+  "name": "@npm-handle/test-hello",
+  "esy": {
+    "build": [
+      "ocamlopt -c ./hello.ml -o #{self.target_dir}/hello",
+      "ocamlopt -o #{self.target_dir}/hello  #{self.target_dir}/hello.cmx"
+    ],
+    "install": "install #{self.target_dir}/hello #{self.bin}/hello",
+    "release": {
+      "bin": [
+        "hello"
+      ]
+    }
+  },
+  "dependencies": {
+    "ocaml": "*"
+  }
+}
